@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin:0;
-  padding:0;
+@layer base {
+  html {
+    @apply text-black text-base font-proxima;
+  }
+
+  h1,
+  h2 {
+    @apply font-ivy;
+  }
+
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  sup {
+    font-size: 65%;
+  }
 }
 
 #gradient-canvas {
