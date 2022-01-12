@@ -20,10 +20,13 @@ export default function Home() {
             <canvas id='gradient-canvas'></canvas>
           </div>
           <div className='text-center py-24 px-5 lg:px-0'>
-            <div className='mb-6'>
+            <div className='mb-6 hidden lg:block'>
               <Image src="/logo.png" alt="logo" width={46} height={64} />
             </div>
-            <p className='text-subtitleCap uppercase font-bold mb-3'>Imagine spending hours every day searching for water</p>
+            <div className='mb-6 lg:hidden'>
+              <Image src="/logo.png" alt="logo" width={29} height={40} />
+            </div>
+            <p className='text-subtitleCap uppercase font-bold mb-3 tracking-tight'>Imagine spending hours every day searching for water</p>
             <h1 className='text-titleMob lg:text-titleh1 font-semibold mb-6'>
               With clean water,<br/>everything changes.
             </h1>
@@ -33,7 +36,7 @@ export default function Home() {
             </div>
             <button className='bg-yellow rounded-[1.25rem]'>
               <a href='https://www.charitywater.org/donate' target='_blank'>
-                <span className='uppercase text-ctaMob lg:text-cta font-bold py-6 px-10 inline-block'>DONATE NOW</span>
+                <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE NOW</span>
               </a>
             </button>
           </div>
