@@ -19,20 +19,22 @@ export default function Home() {
           <div className='fixed -z-10'>
             <canvas id='gradient-canvas'></canvas>
           </div>
-          <div className='text-center py-24 px-5 lg:px-0'>
+        </section>
+        <section>
+          <div className='text-center pt-[135px] lg:pt-[211px] pb-24 px-5 lg:px-0'>
             <div className='mb-6 hidden lg:block'>
               <Image src="/logo.png" alt="logo" width={46} height={64} />
             </div>
             <div className='mb-6 lg:hidden'>
               <Image src="/logo.png" alt="logo" width={29} height={40} />
             </div>
-            <p className='text-subtitleCap uppercase font-bold mb-3 tracking-tight'>Imagine spending hours every day searching for water</p>
+            <p className='text-md uppercase font-bold mb-3 tracking-tight'>Imagine spending hours every day searching for water</p>
             <h1 className='text-titleMob lg:text-titleh1 font-semibold mb-6'>
               With clean water,<br/>everything changes.
             </h1>
             <div className='max-w-sm mx-auto mb-8'>
               <p className='mb-6'>Since 2006, thanks to our local partners and over millions of supporters, we&rsquo;ve brought clean and safe water to more than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
-              <p className='font-light italic'>100% of your donation will always fund clean water.</p>
+              <p className='font-light italic'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
             </div>
             <button className='bg-yellow rounded-[1.25rem]'>
               <a href='https://www.charitywater.org/donate' target='_blank'>

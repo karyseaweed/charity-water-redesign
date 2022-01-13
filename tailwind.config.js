@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     colors: {
       black: '#000000',
+      white: '#FFFFFF',
       yellow: '#F8C525',
       blue: '#4E98D6'
     },
@@ -15,11 +16,12 @@ module.exports = {
     },
     fontSize: {
       label: ['0.8125rem'],
-      ctaMob: ['0.875rem'],
-      cta: ['1rem'],
+      ctaNav: ['0.625rem', '1.2em'],
+      ctaMob: ['0.875rem', '1.2em'],
+      cta: ['1rem', '1.2em'],
       base: ['16px', '1.4em'],
-      suptitle: ['1rem', '1.2em'],
-      suptitleCap: ['1.125rem', '1.2em'],
+      subtitle: ['1rem', '1.2em'],
+      md: ['1.125rem', '1.2em'],
       headingMob: ['1.5rem', '1.2em'],
       heading: ['2.625rem', '1.2em'],
       titleMob: ['2.25rem', '1.4em'],
@@ -32,7 +34,8 @@ module.exports = {
     },
     maxWidth: {
       sm: '424px',
-      md: '456px'
+      md: '456px',
+      lg: '1240px'
     },
     extend: {},
   },
