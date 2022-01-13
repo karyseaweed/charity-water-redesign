@@ -77,9 +77,9 @@ const Nav = () => {
             </li>
           </ul>
     
-          <button className='lg:hidden' onClick={handleClick}>
+          <button className='p-2 lg:hidden' onClick={handleClick}>
             <span className={`burger-bar ${isMobile ? 'opacity-0' : ''}`}></span>
-            <span className={`burger-bar ${isMobile ? 'translate-y-1 rotate-45' : ''}`}></span>
+            <span className={`burger-bar ${isMobile ? 'translate-y-[0.15rem] rotate-45' : ''}`}></span>
             <span className={`burger-bar ${isMobile ? 'translate-y-[-0.25rem] rotate-[-45deg]' : ''}`}></span>
           </button>
         </div>
