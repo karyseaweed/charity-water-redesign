@@ -63,9 +63,9 @@ const Footer = () => {
             </div>
             {/* social icons */}
             <div className='my-12 lg:my-0 flex lg:justify-end relative left-[-0.75rem] lg:left-0 lg:top-3'>
-              <a href='' target='_blank' className='p-3 mr-4 flex justify-center items-center'><Image src='/icon-fb.png' alt='facebook icon' width={8} height={16} /></a>
-              <a href='' target='_blank' className='p-3 mr-4 flex justify-center items-center'><Image src='/icon-twitter.png' alt='twitter icon' width={20} height={16} /></a>
-              <a href='' target='_blank' className='p-3 flex justify-center items-center'><Image src='/icon-ig.png' alt='instagram icon' width={16} height={16} /></a>
+              <a href='https://www.facebook.com/charitywater' target='_blank' className='p-3 mr-4 flex justify-center items-center'><Image src='/icon-fb.svg' alt='facebook icon' width={8} height={16} /></a>
+              <a href='https://twitter.com/charitywater' target='_blank' className='p-3 mr-4 flex justify-center items-center'><Image src='/icon-twitter.svg' alt='twitter icon' width={20} height={16} /></a>
+              <a href='https://www.instagram.com/charitywater/' target='_blank' className='p-3 flex justify-center items-center'><Image src='/icon-ig.svg' alt='instagram icon' width={16} height={16} /></a>
             </div>
             <div className='mt-20 lg:hidden'>
               <Image src='/logo.png' alt='logo' width={34} height={47} />

@@ -28,27 +28,25 @@ export default function Home() {
         </section>
         <section className='lg:h-screen'>
           <div className='text-center pt-[135px] lg:pt-[211px] pb-24 px-5 lg:px-0'>
-            <div>
-              <div className='mb-6 hidden lg:block'>
-                <Image src='/logo.png' alt='logo' width={46} height={64} />
-              </div>
-              <div className='mb-6 lg:hidden'>
-                <Image src='/logo.png' alt='logo' width={29} height={40} />
-              </div>
+            <div className='mb-6 hidden lg:block'>
+              <Image src='/logo.png' alt='logo' width={46} height={64} />
+            </div>
+            <div className='mb-6 lg:hidden'>
+              <Image src='/logo.png' alt='logo' width={29} height={40} />
             </div>
             <p className='text-md uppercase font-bold mb-3 tracking-tight'>Imagine spending hours every day searching for water</p>
             <h1 className='text-titleMob lg:text-titleh1 font-semibold mb-6'>
               With clean water,<br/>everything changes.
             </h1>
-            <div className='max-w-sm mx-auto mb-8'>
-              <p className='mb-6'>Since 2006, thanks to our local partners and over millions of supporters, we&rsquo;ve brought clean and safe water to more than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
+            <div className='max-w-sm mx-auto'>
+              <p>Since 2006, thanks to our local partners and over millions of supporters, we&rsquo;ve brought clean and safe water to more than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
+              <button className='bg-yellow rounded-[1.25rem] my-8'>
+                <a href='https://www.charitywater.org/donate' target='_blank'>
+                  <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE NOW</span>
+                </a>
+              </button>
               <p className='font-light italic'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
             </div>
-            <button className='bg-yellow rounded-[1.25rem]'>
-              <a href='https://www.charitywater.org/donate' target='_blank'>
-                <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE NOW</span>
-              </a>
-            </button>
           </div>
         </section>
       </main>
