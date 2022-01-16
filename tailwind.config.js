@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      black: '#000000',
+      black: '#1E2833',
       white: '#FFFFFF',
       yellow: '#F8C525',
       blue: '#4E98D6'
@@ -15,7 +15,7 @@ module.exports = {
       proxima: ['proxima-nova', 'sans-serif']
     },
     fontSize: {
-      label: ['0.8125rem'],
+      label: ['0.8125rem', '1.2em'],
       ctaNav: ['0.625rem', '1.2em'],
       ctaMob: ['0.875rem', '1.2em'],
       cta: ['1rem', '1.2em'],

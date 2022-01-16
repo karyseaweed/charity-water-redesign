@@ -2,22 +2,33 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
  
-const Nav = () => {
+const Nav = ({ isNavSolid, setNavBg }) => {
   const [isMobile, setMobile] = useState(false);
   const handleClick = () => {
     setMobile(!isMobile);
   };
-    // hide mobile nav on screen resize
+  // hide mobile nav on screen resize
   const handleResize = () => {
     setMobile(false);
   };
+  //
+  const changeNavBg = () => {
+    const nav = document.querySelector('nav');
+    const navHeight = nav.scrollHeight;
+    if (window.scrollY > (navHeight / 2)) {
+      setNavBg(true);
+    } else {
+      setNavBg(false);
+    }
+  }
   useEffect(() => {
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', changeNavBg);
   }, []);
 
   return (
-    <nav className='fixed w-full z-50 bg-gradient-to-b from-white'>
-      <div className='max-w-lg mx-auto py-12 lg:py-20 px-5 lg:px-0 flex justify-between items-center'>
+    <nav className={`fixed w-full z-50 bg-gradient-to-b ${isNavSolid ? 'from-white to-[#91dbef]' : 'from-white'}`}>
+      <div className='max-w-lg mx-auto pt-12 pb-6 lg:pt-20 lg:pb-8 px-5 lg:px-0 flex justify-between items-center'>
   
         <div className='flex'>
           <div className='lg:mr-24'>
@@ -77,7 +88,7 @@ const Nav = () => {
             </li>
           </ul>
     
-          <button className='p-2 lg:hidden' onTouchStart={handleClick}>
+          <button className='p-2 lg:hidden' onTouchEnd={handleClick}>
             <span className={`burger-bar ${isMobile ? 'opacity-0' : ''}`}></span>
             <span className={`burger-bar ${isMobile ? 'translate-y-[0.15rem] rotate-45' : ''}`}></span>
             <span className={`burger-bar ${isMobile ? 'translate-y-[-0.25rem] rotate-[-45deg]' : ''}`}></span>
