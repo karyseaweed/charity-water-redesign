@@ -27,9 +27,10 @@ const Nav = ({ isNavSolid, setNavBg }) => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 bg-gradient-to-b ${isNavSolid ? 'from-white to-[#91dbef]' : 'from-white'}`}>
+    <nav className='fixed w-full z-20 bg-gradient-to-b from-white'>
+      <div className={`absolute w-full h-full top-0 left-0 transition duration-250 bg-gradient-to-b from-white to-[#91dbef] -z-10 ${isNavSolid ? 'opacity-100' : 'opacity-0'}`}>
+      </div>
       <div className='max-w-lg mx-auto pt-12 pb-6 lg:pt-20 lg:pb-8 px-5 lg:px-0 flex justify-between items-center'>
-  
         <div className='flex'>
           <div className='lg:mr-24'>
             <div className='hidden lg:block'>
@@ -45,7 +46,7 @@ const Nav = ({ isNavSolid, setNavBg }) => {
           </div>
           <ul className={`${isMobile ? 'w-screen h-screen flex-col top-0 left-0 fixed py-24 bg-white' : 'hidden left-1/2'} lg:flex items-center text-center capitalize`}>
             <li className='my-10 lg:hidden'>
-              <button className='bg-yellow rounded-[1.25rem]'>
+              <button className='bg-yellow rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
                 <a href='https://www.charitywater.org/account/login' target='_blank'>
                   <span className='uppercase text-ctaMob font-bold py-4 px-8 inline-block tracking-wide'>SIGN IN</span>
                 </a>
@@ -77,7 +78,7 @@ const Nav = ({ isNavSolid, setNavBg }) => {
         <div className='flex justify-end items-center'>
           <ul className='lg:flex items-center text-center capitalize'>
             <li className='mr-5 lg:mr-8'>
-              <button className='bg-yellow rounded-[1.25rem]'>
+              <button className='bg-yellow rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
                 <a href='https://www.charitywater.org/donate' target='_blank'>
                   <span className='uppercase text-ctaNav lg:text-cta font-bold py-2 px-4 inline-block tracking-wide'>DONATE NOW</span>
                 </a>

@@ -33,9 +33,11 @@ module.exports = {
       wide: '0.05em'
     },
     maxWidth: {
-      sm: '424px',
-      md: '456px',
+      md: '604px',
       lg: '1240px'
+    },
+    boxShadow: {
+      standard: 'inset 1px 1px 11px rgba(0, 0, 0, 0.15)'
     },
     extend: {},
   },

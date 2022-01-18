@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react';
 import Image from 'next/image'
 import Nav from '../components/Nav'
+import IconCopy from '../components/IconCopy';
 import '../scripts/gradient.js'
 
 export default function Home() {
@@ -21,31 +22,142 @@ export default function Home() {
       <Nav isNavSolid={isNavSolid} setNavBg={setNavBg} />
 
       <main>
+        {/* MOVING GRADIENT */}
         <section>
           <div className='fixed -z-10'>
             <canvas id='gradient-canvas'></canvas>
           </div>
         </section>
-        <section className='lg:h-screen'>
-          <div className='text-center pt-[135px] lg:pt-[211px] pb-24 px-5 lg:px-0'>
-            <div className='mb-6 hidden lg:block'>
-              <Image src='/logo.png' alt='logo' width={46} height={64} />
-            </div>
-            <div className='mb-6 lg:hidden'>
-              <Image src='/logo.png' alt='logo' width={29} height={40} />
-            </div>
-            <p className='text-md uppercase font-bold mb-3 tracking-tight'>Imagine spending hours every day searching for water</p>
+        {/* HERO */}
+        <section className='lg:min-h-screen'>
+          <div className='text-center pt-[135px] lg:pt-[211px] pb-16 px-5 lg:px-0 h-full'>
+            <p className='text-md uppercase font-bold my-3 tracking-tight'>Imagine spending hours every day searching for water</p>
             <h1 className='text-titleMob lg:text-titleh1 font-semibold mb-6'>
               With clean water,<br/>everything changes.
             </h1>
             <div className='max-w-sm mx-auto'>
               <p>Since 2006, thanks to our local partners and over millions of supporters, we&rsquo;ve brought clean and safe water to more than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
-              <button className='bg-yellow rounded-[1.25rem] my-8'>
+              <button className='bg-yellow my-8 rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
                 <a href='https://www.charitywater.org/donate' target='_blank'>
                   <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE NOW</span>
                 </a>
               </button>
-              <p className='font-light italic'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
+              <p className='font-light italic mb-8'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
+              <Image src='/down-arrow.svg' alt='white down arrow' width={24} height={133} />
+            </div>
+          </div>
+        </section>
+        {/* 4 FLOATING ICONS WITH TEXT */}
+        <section>
+          {/* <div className='pb-12 lg:pb-20 px-5 lg:px-0 relative bg-[url("/bg-rural-mob.png")] lg:bg-[url("/bg-rural.png")] bg-no-repeat bg-bottom bg-contain'> */}
+          <div className='pb-12 lg:pb-20 relative'>
+            {/* rural area bg at section bottom */}
+            <div className='absolute bottom-0 w-full'>
+              <div className='absolute bottom-0 w-full bg-white'>
+                <div className='lg:hidden opacity-0'>
+                  <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={544} />
+                </div>
+                <div className='hidden lg:block opacity-0'>
+                  <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={733} />
+                </div>
+              </div>
+              <div className='lg:hidden'>
+                <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={732} />
+              </div>
+              <div className='hidden lg:block'>
+                <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={1109} />
+              </div>
+            </div>
+            {/* faucet img */}
+            <div className='hidden lg:block'>
+              <Image src='/faucet.png' alt='hands catching water from running faucet' width={581} height={1889} />
+            </div>
+            {/* icons with text */}
+            <div className='mb-64 lg:mb-0 lg:absolute top-72 left-0 w-full px-5 lg:px-0'>
+              <div className='max-w-lg mx-auto flex lg:justify-center'>
+                <div className='w-full lg:w-fit lg:pl-36'>
+                  {/* health insurance */}
+                  <IconCopy
+                    icon='icon-insurance'
+                    iconAlt='health insurance icon'
+                    iconW='140'
+                    iconH='140'
+                    h4='HEALTH'
+                    subtitle='Diseases from dirty water kill more people every year than all forms of violence, including war.'
+                    p='43% of these deaths are children under five years old. Access to clean water and basic sanitation can save around 16,000 lives every week.'
+                  />
+                  {/* hourglass */}
+                  <IconCopy
+                    icon='icon-hourglass'
+                    iconAlt='hourglass icon'
+                    iconW='132'
+                    iconH='132'
+                    isNarrow
+                    h4='TIME'
+                    subtitle='In Africa alone, women spend 40 billion hours a year walking for water.'
+                    p='Access to clean water gives communities more time to grow food, earn an income, and go to school — all of which fight poverty.'
+                  />
+                  {/* graduation hat */}
+                  <IconCopy
+                    icon='icon-gradhat'
+                    iconAlt='graduation hat icon'
+                    iconW='139'
+                    iconH='139'
+                    h4='EDUCATION'
+                    subtitle='Clean water helps keep kids in school, especially girls.'
+                    p="Less time collecting water means more time in class. Clean water and proper toilets at school means teenage girls don't have to stay home for a week out of every month."
+                  />
+                  {/* fists */}
+                  <IconCopy
+                    icon='icon-fists'
+                    iconAlt='fists icon'
+                    iconW='124'
+                    iconH='124'
+                    isNarrow
+                    h4='WOMEN EMPOWERMENT'
+                    subtitle='Women are responsible for 72% of the water collected in Sub-Saharan Africa.'
+                    p='When a community gets water, women and girls get their lives back. They start businesses, improve their homes, and take charge of their own futures.'
+                  />
+                </div>
+              </div>
+            </div>
+            {/* 785 million people */}
+            <div className='text-center px-5 lg:px-0 relative'>
+              <h3 className='text-headingMob lg:text-heading font-semibold pb-6 inline-block bg-[url("/brushstroke.svg")] bg-no-repeat bg-contain'>785 million people in the world live<br className='hidden lg:block'/> without clean water.</h3>
+              <div className='max-w-md mx-auto'>
+                <p className='pb-6'>That's nearly 1 in 10 people worldwide. Or, twice the population of the United States. The majority live in isolated rural areas and spend hours every day walking to collect water for their family. Not only does walking for water keep children out of school or take up time that parents could be using to earn money, but the water often carries diseases that can make everyone sick.</p>
+              </div>
+              <button className='bg-yellow rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
+                <a href='https://www.charitywater.org/donate/water-project-sponsorship' target='_blank'>
+                  <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>HOW DO WE TACKLE IT?</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
+        {/* WHITE CONTENT BLOCK */}
+        <section>
+          <div className='bg-white'>
+            <div className='px-5 lg:px-0 py-12 lg:py-20 text-center'>
+              <h3 className='text-headingMob lg:text-heading font-semibold mb-6 inline-flex justify-center items-center w-[368px] h-[40px] lg:w-[575px] lg:h-[62px] bg-[url("/brushstroke-sm.svg")] bg-no-repeat bg-contain'><span className='block'>12 years of clean water</span></h3>
+              <div className='max-w-md mx-auto'>
+                <p className='mb-6'>In 2009, this rural community in northern Uganda was home to a few hundred people who struggled to get through each day with limited access to water.</p>
+                <p>Today, after 12 years with a clean water project, it's a bustling center of commerce. It's home to donut makers and seamstresses. Farms with herds of livestock. And something we've never seen in a rural community: paved roads and power lines.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* YELLOW CALLOUT BLOCK */}
+        <section>
+          <div className='bg-yellow'>
+            <div className='px-5 lg:px-0 py-12 lg:py-20 text-center'>
+              <h2 className='text-titleMob lg:text-titleh2 mb-6'>Bring clean water to<br className='hidden lg:block'/> the next community</h2>
+              <p className='mb-6'>Inspired by the community? Sponsor a water project and give another<br className='hidden lg:block'/> community or school the same opportunity to flourish.</p>
+              <button className='bg-white rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
+                <a href='https://www.charitywater.org/donate/water-project-sponsorship' target='_blank'>
+                  <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>SPONSOR A WATER PROJECT</span>
+                </a>
+              </button>
             </div>
           </div>
         </section>
