@@ -36,51 +36,50 @@ export default function Home() {
               With clean water,<br/>everything changes.
             </h1>
             <div className='max-w-sm mx-auto'>
-              <p>Since 2006, thanks to our local partners and over millions of supporters, we&rsquo;ve brought clean and safe water to more than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
+              <p>Since 2006, thanks to our local partners and over millions of <br className='hidden lg:block'/>supporters, we&rsquo;ve brought clean and safe water to more <br className='hidden lg:block'/>than 13 million people around <span className='whitespace-nowrap'>the world.</span></p>
               <button className='bg-yellow my-8 rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
                 <a href='https://www.charitywater.org/donate' target='_blank'>
                   <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE NOW</span>
                 </a>
               </button>
-              <p className='font-light italic mb-8'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
+              <p className='font-light italic mb-10'>100% of your donation will always fund <span className='whitespace-nowrap'>clean water.</span></p>
               <Image src='/down-arrow.svg' alt='white down arrow' width={24} height={133} />
             </div>
           </div>
         </section>
         {/* 4 FLOATING ICONS WITH TEXT */}
         <section>
-          {/* <div className='pb-12 lg:pb-20 px-5 lg:px-0 relative bg-[url("/bg-rural-mob.png")] lg:bg-[url("/bg-rural.png")] bg-no-repeat bg-bottom bg-contain'> */}
-          <div className='pb-12 lg:pb-20 relative'>
+          <div className='relative'>
             {/* rural area bg at section bottom */}
             <div className='absolute bottom-0 w-full'>
-              <div className='absolute bottom-0 w-full bg-white'>
+              {/* <div className='absolute bottom-0 w-full bg-white'>
                 <div className='lg:hidden opacity-0'>
                   <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={544} />
                 </div>
                 <div className='hidden lg:block opacity-0'>
                   <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={733} />
                 </div>
-              </div>
-              <div className='lg:hidden'>
+              </div> */}
+              {/* <div className='lg:hidden'>
                 <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={732} />
-              </div>
+              </div> */}
               <div className='hidden lg:block'>
                 <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={1109} />
               </div>
             </div>
             {/* faucet img */}
             <div className='hidden lg:block'>
-              <Image src='/faucet.png' alt='hands catching water from running faucet' width={581} height={1889} />
+              <Image src='/faucet.png' alt='hands catching water from running faucet' width={581} height={1668} />
             </div>
             {/* icons with text */}
-            <div className='mb-64 lg:mb-0 lg:absolute top-72 left-0 w-full px-5 lg:px-0'>
+            <div className='lg:absolute top-72 left-0 w-full px-5 lg:px-0'>
               <div className='max-w-lg mx-auto flex lg:justify-center'>
                 <div className='w-full lg:w-fit lg:pl-36'>
                   {/* health insurance */}
                   <IconCopy
                     icon='icon-insurance'
                     iconAlt='health insurance icon'
-                    iconW='140'
+                    iconW='122'
                     iconH='140'
                     h4='HEALTH'
                     subtitle='Diseases from dirty water kill more people every year than all forms of violence, including war.'
@@ -90,12 +89,12 @@ export default function Home() {
                   <IconCopy
                     icon='icon-hourglass'
                     iconAlt='hourglass icon'
-                    iconW='132'
+                    iconW='98'
                     iconH='132'
                     isNarrow
                     h4='TIME'
-                    subtitle='In Africa alone, women spend 40 billion hours a year walking for water.'
-                    p='Access to clean water gives communities more time to grow food, earn an income, and go to school — all of which fight poverty.'
+                    subtitle={['In Africa alone, women spend', <span className='whitespace-nowrap' key='span'>40 billion</span>, ' hours a year walking ', <span className='whitespace-nowrap' key='span2'>for water.</span>]}
+                    p={['Access to clean water gives communities more time to grow food, earn an income, and go to school — all of which ', <span className='whitespace-nowrap' key='span'>fight poverty.</span>]}
                   />
                   {/* graduation hat */}
                   <IconCopy
@@ -114,15 +113,17 @@ export default function Home() {
                     iconW='124'
                     iconH='124'
                     isNarrow
+                    isMb0
                     h4='WOMEN EMPOWERMENT'
-                    subtitle='Women are responsible for 72% of the water collected in Sub-Saharan Africa.'
-                    p='When a community gets water, women and girls get their lives back. They start businesses, improve their homes, and take charge of their own futures.'
+                    subtitle={['Women are responsible for 72% ', <span className='whitespace-nowrap' key='span'>of the</span>, ' water collected in Sub-Saharan Africa.']}
+                    p={['When a community gets water, women and girls get their lives back. They start businesses, improve their homes, and take charge of their ', <span className='whitespace-nowrap' key='span'>own futures.</span>]}
                   />
                 </div>
               </div>
             </div>
             {/* 785 million people */}
-            <div className='text-center px-5 lg:px-0 relative'>
+            <div className='text-center pt-64 lg:pt-0 pb-12 lg:pb-20 px-5 lg:px-0 relative bg-[url("/bg-rural-mob.png")] lg:bg-none bg-no-repeat bg-right-top bg-cover'>
+              {/* <div className='absolute top-48 left-0 bg-white w-full h-full -z-10'></div> */}
               <h3 className='text-headingMob lg:text-heading font-semibold pb-6 inline-block bg-[url("/brushstroke.svg")] bg-no-repeat bg-contain'>785 million people in the world live<br className='hidden lg:block'/> without clean water.</h3>
               <div className='max-w-md mx-auto'>
                 <p className='pb-6'>That's nearly 1 in 10 people worldwide. Or, twice the population of the United States. The majority live in isolated rural areas and spend hours every day walking to collect water for their family. Not only does walking for water keep children out of school or take up time that parents could be using to earn money, but the water often carries diseases that can make everyone sick.</p>

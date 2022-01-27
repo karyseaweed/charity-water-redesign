@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
-const IconCopy = ({ icon, iconAlt, iconW, iconH, isNarrow, h4, subtitle, p }) => {
+const IconCopy = ({ icon, iconAlt, iconW, iconH, isNarrow, isMb0, h4, subtitle, p }) => {
   return (
     <div className={`lg:block flex flex-col ${isNarrow ? 'items-end lg:ml-[140px]' : ''}`}>
-      <div className='flex flex-col lg:flex-row mb-16'>
-        <div className='w-max lg:w-[140px] text-right'>
+      <div className={`flex flex-col lg:flex-row ${isMb0 ? '': 'mb-16'}`}>
+        <div className='w-max lg:w-[140px] lg:text-right'>
           <div className='w-2/3 lg:w-full'>
             <Image src={`/${icon}.svg`} alt={iconAlt} width={iconW} height={iconH} />
           </div>
