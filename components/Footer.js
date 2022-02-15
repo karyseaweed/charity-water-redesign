@@ -9,7 +9,7 @@ const Footer = () => {
           <div className='h-full'>
             <div className='hidden lg:block'>
               <Image src='/logo.png' alt='logo' width={34} height={47} />
-              <p className='text-label my-3'>charity: water Donation Processing Center, PO Box 5026, Hagerstown, MD 21741-5026 | 1 Devonshire St, London W1W 5DR | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656 . Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.</p>
+              <p className='w-11/12 text-label my-3'>charity: water Donation Processing Center, PO Box 5026, Hagerstown, MD 21741-5026 | 1 Devonshire St, London W1W 5DR | Charity Global, Inc., a US 501 (c)(3) public charity, EIN 22-3936753 and an ANBI in the Netherlands, RSIN 826151656 . Charity Global UK Limited is a dual-qualified charity registered in England and Wales, charity number 1169228. Charity Global UK Limited is wholly owned by Charity Global, Inc.</p>
             </div>
             <form method='POST' className='mt-3 mb-16 lg:mb-0 lg:mt-24'>
               <label htmlFor='email' className='inline-block leading-5 mb-4'>Subscribe to our<br/>newsletter</label>

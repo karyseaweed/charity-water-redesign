@@ -52,17 +52,6 @@ export default function Home() {
           <div className='relative'>
             {/* rural area bg at section bottom */}
             <div className='absolute bottom-0 w-full'>
-              {/* <div className='absolute bottom-0 w-full bg-white'>
-                <div className='lg:hidden opacity-0'>
-                  <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={544} />
-                </div>
-                <div className='hidden lg:block opacity-0'>
-                  <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={733} />
-                </div>
-              </div> */}
-              {/* <div className='lg:hidden'>
-                <Image src='/bg-rural-mob.png' alt='rural areas' layout='responsive' width={375} height={732} />
-              </div> */}
               <div className='hidden lg:block'>
                 <Image src='/bg-rural.png' alt='rural areas' layout='responsive' width={1440} height={1109} />
               </div>
@@ -136,14 +125,93 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* LIGHT BLUE 12 YRS OF CLEAN WATER + CAROUSEL */}
+        <section>
+          <div className='bg-[#F6FBFD]'>
+            <div className='px-5 lg:px-0 py-12 lg:py-20'>
+              <div className='text-center mb-16'>
+                <h3 className='text-headingMob lg:text-heading font-semibold mb-6 inline-flex justify-center items-center w-[368px] h-[40px] lg:w-[575px] lg:h-[62px] bg-[url("/brushstroke-sm.svg")] bg-no-repeat bg-contain'><span className='block'>12 years of clean water</span></h3>
+                <div className='max-w-md mx-auto'>
+                  <p className='mb-6'>In 2009, this rural community in northern Uganda was home to a few hundred people who struggled to get through each day with limited access to water.</p>
+                  <p>Today, after 12 years with a clean water project, it's a bustling center of commerce. It's home to donut makers and seamstresses. Farms with herds of livestock. And something we've never seen in a rural community: paved roads and power lines.</p>
+                </div>
+              </div>
+              {/* desktop caption cards */}
+              <div className='hidden lg:block max-w-lg mx-auto'>
+                <div className='flex justify-between'>
+                  <div className='relative h-max'>
+                    <img src='/postina.png' alt='Postina' width="610" height="386" />
+                    <div className='absolute w-full h-full top-0 flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-200'>
+                      <div className='absolute w-full h-full bg-black opacity-60'></div>
+                      <div className='max-w-[464px] text-center z-10'>
+                        <Image src='/yellow-dbquote.svg' alt='yellow open double quotes' width={32} height={60} />
+                        <p className='text-headingMob text-white font-ivy font-semibold'>Postina</p>
+                        <p className='text-ctaMob text-white capitalize mb-6'>ENTREPRENEUR</p>
+                        <p className='text-label text-white tracking-wide'>"People no longer fall sick like they used to. People would bathe with dirty water. They never used to wash their clothes frequently. However these days, I see people washing clothes. They also use it to cook food, and it's delicious."</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='h-max relative top-12'>
+                    <img src='/richard.png' alt='Richard' width="610" height="386" />
+                    <div className='absolute w-full h-full top-0 flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-200'>
+                      <div className='absolute w-full h-full bg-black opacity-60'></div>
+                      <div className='max-w-[464px] text-center z-10'>
+                        <Image src='/yellow-dbquote.svg' alt='yellow open double quotes' width={32} height={60} />
+                        <p className='text-headingMob text-white font-ivy font-semibold'>Richard</p>
+                        <p className='text-ctaMob text-white capitalize mb-6'>TEACHER</p>
+                        <p className='text-label text-white tracking-wide'>"The water point came. Building and construction followed. Then electricity came. And now businesses continue to boom. In this community, I teach people to stick together. I also teach about sanitation, hygiene, and cleanliness at home. When you educate someone, they can support themselves."</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='w-max h-max mx-auto relative -top-6 -left-4'>
+                  <img src='/joyce.png' alt='Joyce' width="570" height="361" />
+                    <div className='absolute w-full h-full top-0 flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-200'>
+                      <div className='absolute w-full h-full bg-black opacity-60'></div>
+                      <div className='max-w-[464px] text-center z-10'>
+                        <Image src='/yellow-dbquote.svg' alt='yellow open double quotes' width={32} height={60} />
+                        <p className='text-headingMob text-white font-ivy font-semibold'>Joyce</p>
+                        <p className='text-ctaMob text-white capitalize mb-6'>STORE OWNER</p>
+                        <p className='text-label text-white tracking-wide'>"Before, life was not good. The water was not clean. Diseases were so prevalent. When I gave birth to my firstborn, she often fell sick. Now that we have the water point, there are a lot of changes. When you go to fetch water, you fill find clean water."</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              {/* mobile carousel */}
+            </div>
+          </div>
+        </section>
         {/* WHITE CONTENT BLOCK */}
         <section>
           <div className='bg-white'>
-            <div className='px-5 lg:px-0 py-12 lg:py-20 text-center'>
-              <h3 className='text-headingMob lg:text-heading font-semibold mb-6 inline-flex justify-center items-center w-[368px] h-[40px] lg:w-[575px] lg:h-[62px] bg-[url("/brushstroke-sm.svg")] bg-no-repeat bg-contain'><span className='block'>12 years of clean water</span></h3>
-              <div className='max-w-md mx-auto'>
-                <p className='mb-6'>In 2009, this rural community in northern Uganda was home to a few hundred people who struggled to get through each day with limited access to water.</p>
-                <p>Today, after 12 years with a clean water project, it's a bustling center of commerce. It's home to donut makers and seamstresses. Farms with herds of livestock. And something we've never seen in a rural community: paved roads and power lines.</p>
+            <div className='lg:flex'>
+              <div className='max-w-lg mx-auto px-5 lg:px-0 py-12 lg:py-28 lg:flex lg:items-center'>
+                <div className='lg:basis-2/5'>
+                  <div className='w-11/12 text-center lg:text-left'>
+                    <h2 className='text-titleMob lg:text-titleh2 mb-6'>Help more families<br className='hidden lg:block'/> get clean water</h2>
+                    <p className='mb-6'>These families have been completely transformed, but millions more are still waiting for their chance to thrive. This holiday season, you can help.</p>
+                    <p>The gift of clean water changes a family's future. It takes about $240 to bring clean water to one family, but any amount you're able to give will impact generations to come.</p>
+                  </div>
+                </div>
+                <div className='lg:basis-3/5 lg:flex'>
+                  <div className='relative flex justify-center items-center mx-24 my-16'>
+                    <div className='absolute'>
+                      <Image src='/logo.png' alt='logo' width={32} height={44} />
+                    </div>
+                    <div>
+                      <Image src='/rotating-funds.svg' alt='100% funds water project' width={131} height={131} className='animate-spin duration-[6000ms]' />
+                    </div>
+                  </div>
+                  <div className='text-center'>
+                    <p className='font-ivy text-blue text-[4.5rem] opacity-80 mb-6'>6,512 <span className='text-[1.6875rem]'>/ 5,000</span></p>
+                    <p>families served</p>
+                    <button className='bg-yellow my-8 rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
+                      <a href='https://www.charitywater.org/donate' target='_blank'>
+                        <span className='uppercase text-ctaMob lg:text-cta font-bold py-4 px-8 lg:py-6 lg:px-10 inline-block tracking-wide'>DONATE</span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

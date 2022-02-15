@@ -39,6 +39,9 @@ module.exports = {
     boxShadow: {
       standard: 'inset 1px 1px 11px rgba(0, 0, 0, 0.15)'
     },
+    animation: {
+      spin: 'spin 12s linear infinite'
+    },
     extend: {},
   },
   plugins: [],
