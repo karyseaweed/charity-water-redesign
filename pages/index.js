@@ -228,6 +228,7 @@ export default function Home() {
                 <div className='flex justify-between'>
                   <div className='relative h-max'>
                     <div
+                      className='h-[386px]'
                       data-aos='fade-right'
                       data-aos-offset='300'
                       data-aos-duration='500'
@@ -243,6 +244,7 @@ export default function Home() {
                   </div>
                   <div className='h-max relative top-12'>
                     <div
+                      className='h-[386px]'
                       data-aos='fade-left'
                       data-aos-offset='300'
                       data-aos-duration='500'
@@ -259,6 +261,7 @@ export default function Home() {
                 </div>
                 <div className='w-max h-max mx-auto relative -top-6 -left-4'>
                   <div
+                    className='h-[361px]'
                     data-aos='fade-up'
                     data-aos-offset='150'
                     data-aos-duration='500'

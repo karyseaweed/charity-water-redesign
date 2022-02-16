@@ -39,38 +39,38 @@ module.exports = {
     boxShadow: {
       standard: 'inset 1px 1px 11px rgba(0, 0, 0, 0.15)',
     },
-    animation: {
-      spin: 'spin 12s linear infinite',
-      float: 'float 4s ease-in-out infinite',
-    },
-    keyframes: {
-      fade: {
-        from: {
-          opacity: 0,
+    extend: {
+      animation: {
+        spin: 'spin 12s linear infinite',
+      },
+      keyframes: {
+        fade: {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 100,
+          },
         },
-        to: {
-          opacity: 100,
+        float: {
+          '0%': {
+            transform: 'translate(0, 0)',
+          },
+          '30%': {
+            transform: 'translate(5px, 2px)',
+          },
+          '45%': {
+            transform: 'translate(0, 7px)',
+          },
+          '70%': {
+            transform: 'translate(-2px, -5px)',
+          },
+          '100%': {
+            transform: 'translate(0, 0)',
+          },
         },
       },
-      float: {
-        '0%': {
-          transform: 'translate(0, 0)',
-        },
-        '30%': {
-          transform: 'translate(5px, 2px)',
-        },
-        '45%': {
-          transform: 'translate(0, 7px)',
-        },
-        '70%': {
-          transform: 'translate(-2px, -5px)',
-        },
-        '100%': {
-          transform: 'translate(0, 0)',
-        },
-      },
     },
-    extend: {},
   },
   plugins: [],
 };
