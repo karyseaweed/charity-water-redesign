@@ -1,9 +1,13 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../scripts/gradient.js';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import '../styles/globals.css';
+import '../scripts/gradient.js';
 import { useEffect } from 'react';
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -13,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

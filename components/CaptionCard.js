@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CaptionContent from './CaptionContent';
 
 const CaptionCard = ({ isSmaller, name, occupation, quote }) => {
   return (
@@ -13,19 +14,9 @@ const CaptionCard = ({ isSmaller, name, occupation, quote }) => {
         <div className='absolute w-full h-full bg-black opacity-60'></div>
         <div
           className={`text-center z-10 ${
-            isSmaller ? 'max-w-[434px]' : 'max-w-[464px]'
+            isSmaller ? 'max-w-[404px]' : 'max-w-[404px]'
           }`}>
-          <Image
-            src='/yellow-dbquote.svg'
-            alt='yellow open double quotes'
-            width={32}
-            height={60}
-          />
-          <p className='text-headingMob text-white font-ivy font-semibold'>
-            {name}
-          </p>
-          <p className='text-ctaMob text-white capitalize mb-6'>{occupation}</p>
-          <p className='text-label text-white tracking-wide'>{quote}</p>
+          <CaptionContent name={name} occupation={occupation} quote={quote} />
         </div>
       </div>
     </>

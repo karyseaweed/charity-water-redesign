@@ -29,14 +29,64 @@
   .burger-bar {
     @apply block w-8 h-[2px] my-[0.25rem] rounded-[2px] transition-all ease-in-out duration-300 bg-black;
   }
-} 
+}
 
 #gradient-canvas {
   width: 100vw;
   height: 100vh;
-  --gradient-color-1: #FFFFFF;
-  --gradient-color-2: #B1E5FC;
-  --gradient-color-3: #ADFFFA;
-  --gradient-color-4: #4E98D6;
-  --gradient-color-5: #8CE8FA;
+  --gradient-color-1: #ffffff;
+  --gradient-color-2: #b1e5fc;
+  --gradient-color-3: #adfffa;
+  --gradient-color-4: #4e98d6;
+  --gradient-color-5: #8ce8fa;
+}
+
+.swiper {
+  position: unset !important;
+}
+
+.swiper-slide {
+  background-color: #ffffff;
+  width: 300px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: max-content;
+  height: max-content;
+  padding: 1rem;
+  top: unset;
+  bottom: 2.25rem;
+  z-index: 20;
+  color: #f8c525;
+}
+
+.swiper-button-prev {
+  left: 30%;
+}
+
+.swiper-button-next {
+  right: 30%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1rem;
+  border-color: #f8c525;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f8c525;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 3rem !important;
 }

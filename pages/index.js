@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Nav from '../components/Nav';
 import IconCopy from '../components/IconCopy';
 import CaptionCard from '../components/CaptionCard';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
   const [isNavSolid, setNavBg] = useState(false);
@@ -172,7 +173,7 @@ export default function Home() {
               </div>
             </div>
             {/* 785 million people */}
-            <div className='text-center pt-64 lg:pt-0 pb-12 lg:pb-20 px-5 lg:px-0 relative bg-[url("/bg-rural-mob.png")] lg:bg-none bg-no-repeat bg-right-top bg-cover'>
+            <div className='text-center pt-64 lg:pt-0 pb-20 px-5 lg:px-0 relative bg-[url("/bg-rural-mob.png")] lg:bg-none bg-no-repeat bg-right-top bg-cover'>
               <h3 className='text-headingMob lg:text-heading font-semibold pb-6 inline-block bg-[url("/brushstroke.svg")] bg-no-repeat bg-contain'>
                 785 million people in the world live
                 <br className='hidden lg:block' /> without clean water.
@@ -200,12 +201,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* LIGHT BLUE 12 YRS OF CLEAN WATER + CAROUSEL */}
+        {/* LIGHT BLUE 12 YRS OF CLEAN WATER + CAPTION CARDS */}
         <section>
           <div className='bg-[#F6FBFD]'>
-            <div className='px-5 lg:px-0 py-12 lg:py-20'>
-              <div className='text-center mb-16'>
-                <h3 className='text-headingMob lg:text-heading font-semibold mb-6 inline-flex justify-center items-center w-[368px] h-[40px] lg:w-[575px] lg:h-[62px] bg-[url("/brushstroke-sm.svg")] bg-no-repeat bg-contain'>
+            <div className='px-5 lg:px-0 py-20'>
+              <div className='text-center lg:mb-16'>
+                <h3 className='text-headingMob lg:text-heading font-semibold mb-6 inline-flex justify-center items-center w-full h-[40px] lg:w-[575px] lg:h-[62px] bg-[url("/brushstroke-sm.svg")] bg-no-repeat bg-contain'>
                   <span className='block'>12 years of clean water</span>
                 </h3>
                 <div className='max-w-md mx-auto'>
@@ -277,7 +278,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* mobile carousel */}
+            </div>
+          </div>
+        </section>
+        {/* MOBILE CAROUSEL */}
+        <section>
+          <div className='bg-[#F6FBFD] pb-40 relative'>
+            <div className='mx-auto'>
+              <Carousel />
             </div>
           </div>
         </section>
