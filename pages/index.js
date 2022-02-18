@@ -235,7 +235,7 @@ export default function Home() {
                       data-aos-duration='500'
                       data-aos-delay='0'>
                       <CaptionCard
-                        name='Postina'
+                        name='postina'
                         occupation='entrepreneur'
                         quote={
                           "People no longer fall sick like they used to. People would bathe with dirty water. They never used to wash their clothes frequently. However these days, I see people washing clothes. They also use it to cook food, and it's delicious."
@@ -251,7 +251,7 @@ export default function Home() {
                       data-aos-duration='500'
                       data-aos-delay='75'>
                       <CaptionCard
-                        name='Richard'
+                        name='richard'
                         occupation='teacher'
                         quote={
                           'The water point came. Building and construction followed. Then electricity came. And now businesses continue to boom. In this community, I teach people to stick together. I also teach about sanitation, hygiene, and cleanliness at home. When you educate someone, they can support themselves.'
@@ -269,7 +269,7 @@ export default function Home() {
                     data-aos-delay='150'>
                     <CaptionCard
                       isSmaller
-                      name='Joyce'
+                      name='joyce'
                       occupation='store owner'
                       quote={
                         'Before, life was not good. The water was not clean. Diseases were so prevalent. When I gave birth to my firstborn, she often fell sick. Now that we have the water point, there are a lot of changes. When you go to fetch water, you fill find clean water.'
@@ -283,7 +283,7 @@ export default function Home() {
         </section>
         {/* MOBILE CAROUSEL */}
         <section>
-          <div className='bg-[#F6FBFD] pb-40 relative'>
+          <div className='bg-[#F6FBFD] pb-40 relative lg:hidden'>
             <div className='mx-auto'>
               <Carousel />
             </div>
