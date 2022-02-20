@@ -87,5 +87,6 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
+  height: 48px;
   bottom: 38px !important;
 }
