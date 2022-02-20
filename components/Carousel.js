@@ -28,7 +28,7 @@ const Carousel = () => {
             width={300}
             height={230}
           />
-          <div className='mt-6 mb-12 flex justify-center items-center'>
+          <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
                 isMobile
@@ -44,11 +44,11 @@ const Carousel = () => {
         <SwiperSlide>
           <Image
             src='/richard-mob.png'
-            alt='Postina'
+            alt='Richard'
             width={300}
             height={230}
           />
-          <div className='mt-6 mb-12 flex justify-center items-center'>
+          <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
                 isMobile
@@ -62,8 +62,8 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src='/joyce-mob.png' alt='Postina' width={300} height={230} />
-          <div className='mt-6 mb-12 flex justify-center items-center'>
+          <Image src='/joyce-mob.png' alt='Joyce' width={300} height={230} />
+          <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
                 isMobile

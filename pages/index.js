@@ -55,17 +55,19 @@ export default function Home() {
                   </span>
                 </a>
               </button>
-              <p className='font-light italic mb-10 opacity-0 animate-[fade_0.25s_ease-out_0.5s_forwards]'>
+              <p className='font-light italic mb-16 opacity-0 animate-[fade_0.25s_ease-out_0.5s_forwards]'>
                 100% of your donation will always fund{' '}
                 <span className='whitespace-nowrap'>clean water.</span>
               </p>
-              <Image
-                src='/down-arrow.svg'
-                alt='white down arrow'
-                width={24}
-                height={133}
-                className='opacity-0 animate-[fade_0.25s_ease-out_0.6s_forwards]'
-              />
+              <div className='animate-bounce'>
+                <Image
+                  src='/down-arrow.svg'
+                  alt='white down arrow'
+                  width={24}
+                  height={133}
+                  className='opacity-0 animate-[fade_0.25s_ease-out_0.6s_forwards]'
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -89,8 +91,8 @@ export default function Home() {
               <Image
                 src='/faucet.png'
                 alt='hands catching water from running faucet'
-                width={581}
-                height={1668}
+                width={606}
+                height={1688}
               />
             </div>
             {/* icons with text */}
@@ -186,7 +188,8 @@ export default function Home() {
                   for their family. Not only does walking for water keep
                   children out of school or take up time that parents could be
                   using to earn money, but the water often carries diseases that
-                  can make everyone sick.
+                  can make{' '}
+                  <span className='whitespace-nowrap'>everyone sick.</span>
                 </p>
               </div>
               <button className='bg-yellow rounded-[1.25rem] hover:shadow-standard focus:shadow-standard'>
