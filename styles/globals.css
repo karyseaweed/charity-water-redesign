@@ -55,7 +55,7 @@
   height: max-content;
   padding: 1rem;
   top: unset;
-  bottom: 2.25rem;
+  bottom: 36px;
   z-index: 20;
   color: #f8c525;
 }
@@ -87,5 +87,5 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 3rem !important;
+  bottom: 48px !important;
 }

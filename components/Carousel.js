@@ -22,12 +22,7 @@ const Carousel = () => {
         modules={[Navigation, Pagination]}
         className='mySwiper w-full h-full'>
         <SwiperSlide>
-          <Image
-            src='/postina-mob.png'
-            alt='Postina'
-            width={300}
-            height={230}
-          />
+          <img src='/postina-mob.png' alt='Postina' width='300' height='230' />
           <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
@@ -42,12 +37,7 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src='/richard-mob.png'
-            alt='Richard'
-            width={300}
-            height={230}
-          />
+          <img src='/richard-mob.png' alt='Richard' width='300' height='230' />
           <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
@@ -62,7 +52,7 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src='/joyce-mob.png' alt='Joyce' width={300} height={230} />
+          <img src='/joyce-mob.png' alt='Joyce' width='300' height='230' />
           <div className='pt-6 pb-12 flex justify-center items-center bg-white'>
             <div className='text-center w-4/5'>
               <CaptionContent
