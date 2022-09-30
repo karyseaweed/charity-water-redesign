@@ -1,11 +1,10 @@
-import Image from 'next/image';
 import CaptionContent from './CaptionContent';
 
 const CaptionCard = ({ isSmaller, name, occupation, quote }) => {
   return (
     <>
-      <Image
-        src={`/${name}.png`}
+      <img
+        src={`${name}.png`}
         alt={name}
         width={isSmaller ? '570' : '610'}
         height={isSmaller ? '361' : '386'}

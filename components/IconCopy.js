@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const IconCopy = ({
   animation,
   icon,
@@ -25,8 +23,8 @@ const IconCopy = ({
         <div className='w-max lg:w-[140px] lg:text-right'>
           <div
             className={`w-2/3 lg:w-full translate-x-0 translate-y-0 ${animation}`}>
-            <Image
-              src={`/${icon}.svg`}
+            <img
+              src={`${icon}.svg`}
               alt={iconAlt}
               width={iconW}
               height={iconH}

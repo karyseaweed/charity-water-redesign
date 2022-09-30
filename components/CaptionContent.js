@@ -1,13 +1,11 @@
-import Image from 'next/image';
-
 const CaptionContent = ({ isMobile, name, occupation, quote }) => {
   return (
     <>
-      <Image
-        src='/yellow-dbquote.svg'
+      <img
+        src='yellow-dbquote.svg'
         alt='yellow open double quotes'
-        width={32}
-        height={60}
+        width='32'
+        height='60'
       />
       <p
         className={`text-headingMobfont-ivy font-semibold ${
